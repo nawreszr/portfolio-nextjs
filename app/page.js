@@ -4,20 +4,25 @@ const certifications = [
   { name: 'Docker Certified Associate', issuer: 'Docker', year: 2025 },
   { name: 'Certified Kubernetes Administrator', issuer: 'CNCF', year: 2025 },
   { name: 'AWS Cloud Practitioner', issuer: 'Amazon', year: 2024 },
+  { name: "HashiCorp Terraform Associate", issuer: "HashiCorp", year: 2026 },
 ];
 
 const projets = [
   { name: 'Pipeline CI/CD GitHub Actions', desc: 'Build, tests et déploiement automatisés.' },
   { name: 'Platform Engineering avec Backstage', desc: 'Portail développeur et Software Templates.' },
   { name: 'Infrastructure Cloud as Code', desc: 'Provisionnement avec Terraform et Docker.' },
+  { name: "Déploiement GitOps avec ArgoCD", desc: "Livraison continue sur Kubernetes pilotée par Git." },
 ];
+
+const fullName = "Nawres Zr";
+const about = "Ingénieure DevOps passionnée par le Cloud et le Platform Engineering.";
 
 export default function Home() {
   return (
     <main>
       <header>
         <div>
-          <h1>Nawres Zr</h1>
+          <h1>{fullName}</h1>
           <p>Ingénieur DevOps &amp; Cloud</p>
         </div>
         <ThemeToggle />
@@ -25,7 +30,7 @@ export default function Home() {
 
       <section>
         <h2>À propos</h2>
-        <div className="card">Mon portfolio Next.js</div>
+        <div className="card">{about}</div>
       </section>
 
       <section id="certifications">
