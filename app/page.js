@@ -17,7 +17,7 @@ export default function Home() {
     <main>
       <header>
         <div>
-          <h1>portfolio-nextjs</h1>
+          <h1>Nawres Zr</h1>
           <p>Ingénieur DevOps &amp; Cloud</p>
         </div>
         <ThemeToggle />
